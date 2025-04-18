@@ -16,7 +16,6 @@ export function hoursLoad({ date, dailySchedules }){
     hours.innerHTML = '';
 
     const unavailableHours = dailySchedules.map((schedule) => dayjs(schedule.when).format('HH:mm'));
-    console.log(unavailableHours)
 
     const opening = openingHours.map((hour) => {
         const [scheduleHour] = hour.split(':');
